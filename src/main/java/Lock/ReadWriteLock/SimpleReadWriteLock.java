@@ -52,8 +52,8 @@ public class SimpleReadWriteLock implements ReadWriteLock {
                     } catch (InterruptedException e) {
                         throw new RuntimeException("interrupted");
                     }
-                    readCount ++;
                 }
+                readCount ++;
             }finally {
                 lock.lock();
             }

@@ -1,13 +1,6 @@
 package Lock.QueueLock;
 
-import Lock.CAS.CAS;
 import Lock.Lock;
-import Lock.TASLock.Backoff;
-import Lock.TASLock.TTASLock;
-import Lock.TimeCost;
-import org.ehcache.sizeof.SizeOf;
-
-import java.util.Map;
 
 /**
  * @author JIANXIN.GUO
@@ -37,11 +30,10 @@ public class CLHTest {
 
     public static void main(String[] args) {
 
-        Backoff backoff = new Backoff(1,3);
-        Map<String, Object> humpMap = ReflectUtil.getHumpMap(backoff);
-        SizeOf sizeOf = SizeOf.newInstance();
-        long l = sizeOf.sizeOf(backoff);
-        System.out.println(l);
+//        Backoff backoff = new Backoff(1,3);
+//        SizeOf sizeOf = SizeOf.newInstance();
+//        long l = sizeOf.sizeOf(backoff);
+//        System.out.println(l);
 //        for(int i = 0; i < 100; i ++){
 //            Thread t = new Thread(new Runnable(){
 //
